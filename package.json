@@ -1,0 +1,42 @@
+{
+  "name": "movies-explorer-api",
+  "version": "1.0.0",
+  "description": "Серверная часть дипломного проекта по веб-разработке",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedgehogscodes/movies-explorer-api.git"
+  },
+  "author": "Погосян Жора",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hedgehogscodes/movies-explorer-api/issues"
+  },
+  "homepage": "https://github.com/hedgehogscodes/movies-explorer-api#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.10"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^14.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^6.6.0",
+    "express-winston": "^4.2.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "validator": "^13.6.0",
+    "winston": "^3.8.2"
+  }
+}
