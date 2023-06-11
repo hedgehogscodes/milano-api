@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema({
       message: "Неверная ссылка!",
     },
     default:
-      "https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png",
+      "https://sun9-1.userapi.com/impg/HrIH1Cf25MtojO6ZeYuIpQNV3_Oem_2elcc55w/nAgfUON2Z1Q.jpg?size=300x300&quality=96&sign=5b705302ce2e36441f13505e2aeedeea&type=album",
   },
   email: {
     type: String,
