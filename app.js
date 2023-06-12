@@ -23,13 +23,9 @@ mongoose.connect( MONGO_URL, {
 
 app.use(express.json());
 
+app.use(cors());
 app.use(requestLogger);
 app.use(requestLimiter);
-app.use((req, res, next) => {
-  res.header({"Access-Control-Allow-Origin": "*"});
-  next();
-}) 
-app.use(cors());
 app.use(helmet());
 
 app.use(router);
