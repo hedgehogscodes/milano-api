@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const { errors } = require('celebrate');
-const cors = require('cors');
+const cors = require("cors");
 
 const router = require('./routes/index');
 const handleErrors = require('./middlewares/errors');
@@ -25,6 +25,9 @@ app.use(express.json());
 
 app.use(requestLogger);
 app.use(requestLimiter);
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*")
+}) 
 app.use(cors());
 app.use(helmet());
 
